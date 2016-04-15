@@ -1,0 +1,298 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tercera Aplicacion</title>
+
+<!-- grupo CSS -->
+<link rel="stylesheet" href="css/app3.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!-- grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/LamujerdormidabyWarnerC.jpg','imagenes/volcanes-ciencia.jpg','imagenes/003pintura_02_thumb1.jpg','imagenes/cenapred.jpg','imagenes/247.jpg','imagenes/ceniza.jpeg','imagenes/popocatepetl001-520-360.jpg')">
+<div data-role="page" id="Principal" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+    <h1>Popocatépetl</h1>
+  </div>
+ <div>
+       <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+       <li class="ui-first-child ui-last-child">
+       <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>UBICACIÓN</h2>
+         </a>
+</li>
+         <li class="ui-first-child ui-last-child">
+           <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+           <h2>LEYENDA(Creencias del pueblo)</h2>
+           </a>
+</li>
+           <li class="ui-first-child ui-last-child">
+           <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+           <h2>ESTADOS QUE CONLINDAN CON EL VOLCAN</h2>
+           </a>
+           </li>
+           <li class="ui-first-child ui-last-child">
+               <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+               <h2>INFORMACION BÁSICA</h2>
+               </a>
+</li>
+                 <li class="ui-first-child ui-last-child">
+               <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+               <h2>MEDIDAS PREVENTIVAS </h2> 
+               </a>
+              </li>
+                 
+</div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+  <div>  
+       <h4>Aplicacion Tres</h4>
+    <img src="imagenes/volcano-app-icon.jpg" width="46" height="46">
+   </div>
+   <div>
+     <h4>Óscar Josmar Martínez Picazo</h4>
+     </div>
+     </div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+  <h1>Popocatepetl</h1>
+  </div>
+<!-- Start WOWSlider.com -->
+<iframe src="visor/indexwow.html" style="width:100%;height:50%;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+
+<p>El Popocatépetl (en náhuatl: popocatepetl, ‘el cerro que humea’‘popoca, humear; tepetl, cerro’)? es un volcán activo localizado en el centro de México, en los límites territoriales de los estados de Morelos, Puebla yMéxico. Se localiza a unos 72 km al sureste de la Ciudad de México, 43 km de Puebla, 63 km de Cuernavaca, y 53 km de Tlaxcala.3
+  Tiene una forma cónica simétrica y está unido por la parte norte con el Iztaccíhuatl mediante un paso montañoso conocido como Paso de Cortés. El volcán tiene glaciares perennes cerca de la boca del cono, en la punta de la montaña. Es el segundo volcán más alto de México, con una altitud máxima de 5500 metros sobre el nivel del mar, sólo después del Citlaltépetl de 5610 msnm.   
+</p>
+
+<div data-role="footer" align="center" data-theme="a">
+  <div>  
+       <h4>Aplicacion Tres</h4>
+    <img src="imagenes/volcano-app-icon.jpg" width="46" height="46">
+   </div>
+   <div>
+     <h4>Óscar Josmar Martínez Picazo</h4>
+     </div>
+  </div >
+   </div >
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+  <h1>LEYENDA</h1>
+  </div>
+        <div>
+          <div>  
+  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image18','','imagenes/LamujerdormidabyWarnerC.jpg',1)"><p align= "center"><img src="imagenes/maxresdefault.jpg" width="50%" height="50%" id="Image18"></a>
+          </div>
+    <p>Hace ya miles de años, cuando el Imperio Azteca estaba en su esplendor y dominaba el Valle de México, como práctica común sometían a los pueblos vecinos, requiriéndoles un tributo obligatorio. Fue entonces cuando el cacique de los Tlaxcaltecas, acérrimos enemigos de los Aztecas, cansado de esta terrible opresión, decidió luchar por la libertad de su pueblo.
+El cacique tenía una hija, llamada Iztaccíhuatl, era la princesa más bella y depositó su amor en el joven Popocatépetl, uno de los más apuestos guerreros de su pueblo.
+Ambos se profesaban un inmenso amor, por lo que antes de partir a la guerra, Popocatépetl pidió al cacique la mano de la princesa Iztaccíhuatl. El padre accedió gustoso y prometió recibirlo con una gran celebración para darle la mano de su hija si regresaba victorioso de la batalla.
+El valiente guerrero aceptó, se preparó para partir y guardó en su corazón la promesa de que la princesa lo esperaría para consumar su amor.
+Al poco tiempo, un rival de amores de Popocatépetl, celoso del amor de ambos se profesaban, le dijo a la princesa Iztaccíhuatl que su amado había muerto durante el combate.
+Abatida por la tristeza y sin saber que todo era mentira, la princesa murió.
+Tiempo después, Popocatépetl regresó victorioso a su pueblo, con la esperanza de ver a su amada. A su llegada, recibió la terrible noticia sobre el fallecimiento de la princesa Iztaccíhuatl.
+Entristecido con la noticia, vagó por las calles durante varios días y noches, hasta que decidió hacer algo para honrar su amor y que el recuerdo de la princesa permaneciera en la memoria de los pueblos.
+Mandó construir una gran tumba ante el Sol, amontonando 10 cerros para formar una enorme montaña.Tomó entre sus brazos el cuerpo de su princesa, lo llevó a la cima y lo recostó inerte sobre la gran montaña.  El joven guerrero le dio un beso póstumo, tomó una antorcha humeante y se arrodilló frente a su amada, para velar así, su sueño eterno.
+Desde aquel entonces permanecen juntos, uno frente a otro. Con el tiempo la nieve cubrió sus cuerpos, convirtiéndose en dos enormes volcanes que seguirán así hasta el final del mundo.
+La leyenda añade, que cuando el guerrero Popocatépetl se acuerda de su amada, su corazón que guarda el fuego de la pasión eterna, tiembla y su antorcha echa humo.   Por ello hasta hoy en día, el volcán Popocatépetl continúa arrojando fumarolas.
+
+</p>
+   <div data-role="footer" align="center" data-theme="a">
+  <div>  
+       <h4>Aplicacion Tres</h4>
+    <img src="imagenes/volcano-app-icon.jpg" width="46" height="46">
+   </div>
+   <div>
+     <h4>Óscar Josmar Martínez Picazo</h4>
+     </div>
+   </div>
+   </div>
+     </div>  
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+      <h1>ESTADOS</h1>
+      </div>
+          <div> 
+ <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image11','','imagenes/cenapred.jpg',1)"><p align= "center"><img src="imagenes/puebla.jpg" width="278" height="278" id="Image11"></a>
+<p align= "center"> Tlaxcala </p>
+<p align= "center"> México</p>
+<p align= "center"> Morelos</p>
+  
+   
+    <div data-role="footer" align="center" data-theme="a">
+  <div>  
+       <h4>Aplicacion Tres</h4>
+    <img src="imagenes/volcano-app-icon.jpg" width="46" height="46">
+   </div>
+   <div>
+     <h4>Óscar Josmar Martínez Picazo</h4>
+     </div>
+   </div>
+</div>
+   </div>
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+ <h1>Informacion basica</h1>
+  </div>
+   <div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+        <h1>Actividad Volcanica</h1>
+        <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image17','','imagenes/volcanes-ciencia.jpg',1)"><p align= "center"><img src="imagenes/popocatepetl001-520-360.jpg" width="50%" height="50%" id="Image17"></a>
+<div>
+  <h2>El Semáforo de Alerta Volcánica del Popocatépetl se encuentra en Amarillo Fase 2. </h2>
+
+Los escenarios previstos para esta fase son: </p>
+
+<p>1. Que continúe la actividad explosiva de escala baja a intermedia.</p> 
+
+<p>2. Lluvias de ceniza leves a moderadas en poblaciones cercanas. </p >
+
+<p>3. Posibilidad de flujos piroclásticos y flujos de lodo de corto alcance. </p>
+
+<h2>Se hace especial énfasis en las siguientes recomendaciones:</h2>
+
+<p>1. Continuar con el radio de seguridad de 12 km, por lo que la permanencia en esa área no está permitida. </p >
+
+<p>2. Mantener el tránsito controlado entre Santiago Xalitzintla y San Pedro Nexapa, vía Paso de Cortés. </p>
+
+<p>3. A las autoridades de Protección Civil, mantener sus procedimientos preventivos, de acuerdo con sus planes operativos. </p>
+
+<p>4. A la población, estar atenta a la información oficial que se difunda. </p>
+
+<h2>En caso de caída de ceniza, se hacen las siguientes recomendaciones:</h2> 
+
+<p>Cubrir nariz y boca con un pañuelo húmedo o cubreboca.</p> 
+
+Limpiar ojos y garganta con agua pura. </p>
+
+<p>Utilizar lentes de armazón y evitar los lentes de contacto para reducir la irritación ocular. 
+
+<p>Cerrar ventanas o cubrirlas y permanecer lo más posible dentro de la casa. </p>
+
+<p>El monitoreo del Volcán Popocatépetl se realiza de forma continua las 24 horas. Cualquier cambio en la actividad será reportado oportunamente. </p>
+   
+    
+  </div>
+   </div>
+
+    <div data-role="collapsible" data-content-theme="false">
+        <h1> Antigüedad </h1>
+        <div>
+        <p>
+    Muchos eventos fueron documentados por los aztecas en sus códices, como el que sucedió en el año 1509 d. C, el cual fue plasmado en los códices Telleriano-Remensis y Vaticano. En 1519 dio inicio una actividad fumarólica que culminó en 1530. Entre 1539 y 1549 se produjeron erupciones explosivas moderadas que liberaron piedra pómez del interior de la tierra.
+        </p>
+        <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image17','','imagenes/003pintura_02_thumb1.jpg',1)"><p align= "center"><img src="imagenes/Leyenda-de-los-Volcanes.jpeg" width="50%" height="50%" id="Image"></a> </div>
+   
+   </div>
+
+   <div data-role="collapsible" data-content-theme="false">
+        <h1>Monitoreo</h1>
+        <div>
+        <p>
+     La información publicada en esta sección es el resultado del monitoreo del volcán Popocatépetl que se realiza conjuntamente con la Universidad Nacional Autónoma de México. 
+
+El reporte se publica diariamente a las 11 de la mañana; en éste se resume la actividad registrada durante las últimas 24 horas, esto es, de 10 de la mañana del día anterior a 10 de la mañana del día en curso. En caso de que ocurra un evento extraordinario se reportará de forma inmediata. Para consulta de reportes anteriores de click
+        </p>
+        </div>
+     <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image12','','imagenes/volcanes-ciencia.jpg',1)"><p align= "center"><img src="imagenes/sismogramaPP.gif" width="50%" height="50%" id="Image12"></a> </div>
+   <div data-role="collapsible" data-content-theme="false">
+        <h1>TAMAÑO(Altura y Crater) </h1>
+        <div>
+        <p>
+       Tiene una forma cónica simétrica y está unido por la parte norte con el Iztaccíhuatl mediante un paso montañoso conocido como Paso de Cortés. El volcán tiene glaciares perennes cerca de la boca del cono, en la punta de la montaña. Es el segundo volcán más alto de México, con una altitud máxima de 5500 metros sobre el nivel del mar, sólo después del Citlaltépetl de 5610 msnm.
+        </p>
+        <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image13','','imagenes/247.jpg',1)"><p align= "center"><img src="imagenes/domopopo.jpg" width="50%" height="50%" id="Image13"></a> </div>
+        </div>
+      </div>
+     <div data-role="footer" align="center" data-theme="a">
+    <div>  
+       <h4>Aplicacion Tres</h4>
+    <img src="imagenes/volcano-app-icon.jpg" width="46" height="46">
+   </div>
+     <h4>Óscar Josmar Martínez Picazo</h4>
+     </div>
+    </div>
+ <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+ 
+   <h1>RECOMENDACIONES</h1>
+  </div>
+   <div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+        <h1>Caida de Ceniza</h1>
+      <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image14','','imagenes/ceniza.jpeg',1)"><p align= "center"><img src="imagenes/ceniza-recomendaciones.jpg" width="50%" height="50%" id="Image2"></a>
+<div>
+  <p>1.-No humedecer la ceniza a fin de evitar taponamientos en el sistema de alcantarillado</p>
+<p>2.-Mantén la calma.</p>
+<p>3.-Utiliza medios electrónicos y de comunicación para obtener información confiable que den las autoridades de Protección Civil sobre la caída de ceniza y atiende siempre sus instrucciones.</p>
+<p4.->No realices actividades al aire libre y si es posible no salgas.
+<p>5.-Cierra puertas y ventanas y coloca toallas o trapos húmedos en las rendijas.</p>
+<p>6.-Si tienes que salir cúbrete con un pañuelo o tapabocas, limpia ojos y garganta con agua pura.</p>
+<p>7.-Para los ojos, usa lentes protectores, especialmente si usas lentes de contacto.</p>
+<p>8.-Ten a la mano una linterna y pilas.</p>
+
+    
+</div>
+   </div>
+    
+  </div>
+   <div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+        <h1>Actividad Volcanica</h1>
+       <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image14','','imagenes/popocatepetl001-520-360.jpg',1)"><p align= "center"><img src="imagenes/Volcanica1.jpg" width="50%" height="50%" id="Image3"></a>
+<p> •	Con los miembros de la familia preparemos el maletín para emergencias, con alimentos no perecederos, radio, foco, documentos personales, medicinas y protectores para cubrir la nariz.</p>
+<p>•	Ubiquemos los albergues temporales, las rutas de evacuación y las zonas seguras en su comunidad.</p>
+<p>•	Respetemos los sitios declarados peligrosos.</p>
+<p>•	Consultemos a los Comités Municipales y Locales de Emergencias, sobre el sistema de evacuación y los centros de albergues para animales.</p>
+<p>•	Establezcamos una ruta de evacuación, lejos de los ríos y quebradas y los posibles albergues.</p>
+<p>•	Comuniquemos a las autoridades locales o al 9-1-1 cualquier anomalía u observación sobre el comportamiento del volcán.</p>
+<p>•	No nos dejemos llevar por falsos rumores de personas no autorizadas.</p>
+    
+  </div>
+   </div>
+
+
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed" >
+  <div>  
+       <h4>Aplicacion Tres</h4>
+    <img src="imagenes/volcano-app-icon.jpg" width="46" height="46">
+   </div>
+   <div>
+     <h4>Óscar Josmar Martínez Picazo</h4>
+   </div>
+   </div>
+   </div>
+    
+ 
+</body>
+</html>
